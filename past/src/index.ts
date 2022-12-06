@@ -1,7 +1,7 @@
 import { readFileSync } from "fs";
 
 function SolutionOne() {
-  const measurements = readFileSync("./input/1.txt", "utf-8")
+  const measurements = readFileSync("./input/2021/1.txt", "utf-8")
     .split("\n")
     .map((s) => Number(s));
   let sliding_sums: number[] = [];
@@ -18,3 +18,4 @@ function SolutionOne() {
   }
   return [get_increases(measurements), get_increases(sliding_sums)];
 }
+console.log(SolutionOne());
