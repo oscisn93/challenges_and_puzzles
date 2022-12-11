@@ -47,7 +47,7 @@ function firstPart() {
   console.log(sizes.filter((n) => n <= 100000).reduce((a,b) => a+b));
 }
 
-// firstPart();
+firstPart();
 
 function secondPart() {
   const sizes = getDirectorySizes();
@@ -58,5 +58,3 @@ function secondPart() {
 }
 
 secondPart();
-// expect firstPart() to be: 1989474
-// secondPart() to be: 1111607
