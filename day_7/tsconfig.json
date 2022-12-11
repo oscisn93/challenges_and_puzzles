@@ -6,5 +6,5 @@
         "sourceMap": true,
         "outDir": "dist",
     },
-    "include": ["src/**/*", "../day_7"],
+    "include": ["src/**/*"],
 }

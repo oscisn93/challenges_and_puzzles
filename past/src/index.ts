@@ -18,4 +18,26 @@ function SolutionOne() {
   }
   return [get_increases(measurements), get_increases(sliding_sums)];
 }
-console.log(SolutionOne());
+
+function SolutionTwo() {
+  const moves = readFileSync("./input/2021/test_input/2.txt", "utf-8").split("\n");
+  let [x, y] = [0,0];
+  for (const move of moves) {
+    const [direction, magnitude] = move.split(" ");
+    switch (direction[0]) {
+      case "f":
+        x += Number(magnitude);
+        break;
+      case "d":
+        y+= Number(magnitude);
+        break;
+      case "u":
+        y-= Number(magnitude);
+        break;
+    }
+  }
+  return [x,y];
+}
+
+// console.log(SolutionOne());
+console.log(SolutionTwo());
