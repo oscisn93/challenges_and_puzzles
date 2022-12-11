@@ -1,5 +1,4 @@
 import { readFileSync } from "fs";
-import { stringify } from "querystring";
 
 function* input_lines(): Generator<string[], void, unknown> {
   const input = readFileSync("test.txt", "utf-8")
