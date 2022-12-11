@@ -5,42 +5,41 @@ const input: Array<Array<string>> = readFileSync("input.txt", "utf-8")
   .map((line) => line.split(" "));
 
 function getDirectorySizes(): number[] {
-  let path: string[] = [];
+  let path = new Array<string>();
   const sizes = new Map<string, number>();
   for (let i = 0; i < input.length; i++) {
     const line = input[i];
-    // if the line is a cd command
+    // handle cd
     if (line[1] === "cd") {
-      // update the path (stack)
       let dir = line[2];
-      // if the path is root empty the path
+      // if the path is root empty the stack
       if (dir === "/") path = [];
-      // revert by popping the stack
+      // if .. revert by popping the stack
       else if (dir === "..") path.pop();
       // otherwise push the new directory onto the stack
       else path.push(dir);
     } else {
-      // otherwise it must be an ls command
+    // handle ls
       do {
         i++;
         // ignore directories
         if (input[i][0] === "dir") continue;
         // must be a file, therefore, size = file size
         const size = Number(input[i][0]);
-        // update all parent directories
+        // use a copy of the stack to update all parent directories
         let p_copy = [...path];
         while (true) {
-          // on each iteration the path shrinks
           const full_path = p_copy.join("/");
           // if the path does not yet exist update the map
           if (!sizes.has(full_path)) sizes.set(full_path, size);
-          // other wise update the existing path
+          // other wise update size of existing path
           else {
             let d_size = sizes.get(full_path);
             sizes.set(full_path, d_size + size);
           }
-          if (p_copy.length != 0) p_copy.pop();
-          else break;
+          // continue until the stack is empty
+          if (p_copy.length == 0) break; 
+          p_copy.pop();
         }
         // continue until the next line contains a command
       } while (input[i + 1] && input[i + 1][0] != "$");
