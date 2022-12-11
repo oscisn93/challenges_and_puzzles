@@ -28,9 +28,10 @@ function getDirectorySizes(): number[] {
         // must be a file, therefore, size = file size
         const size = Number(input[i][0]);
         // update all parent directories
-        for (let end = path.length; end >= 0; end--) {
+        let p_copy = [...path];
+        while (true) {
           // on each iteration the path shrinks
-          const full_path = path.slice(0, end).join("/");
+          const full_path = p_copy.join("/");
           // if the path does not yet exist update the map
           if (!sizes.has(full_path)) sizes.set(full_path, size);
           // other wise update the existing path
@@ -38,6 +39,8 @@ function getDirectorySizes(): number[] {
             let d_size = sizes.get(full_path);
             sizes.set(full_path, d_size + size);
           }
+          if (p_copy.length != 0) p_copy.pop();
+          else break;
         }
         // continue until the next line contains a command
       } while (input[i + 1] && input[i + 1][0] != "$");
