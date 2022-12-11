@@ -4,7 +4,7 @@ const input: Array<Array<string>> = readFileSync("input.txt", "utf-8")
   .split("\n")
   .map((line) => line.split(" "));
 
-function getDirectorySizes(): number[] {
+function getDirectorySizes(): Array<number> {
   let path = new Array<string>();
   const sizes = new Map<string, number>();
   for (let i = 0; i < input.length; i++) {
