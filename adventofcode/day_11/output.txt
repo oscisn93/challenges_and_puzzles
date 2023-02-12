@@ -1,0 +1,165 @@
+	Running simulation...
+
+...
+
+Round 1
+Monkey 0: 2
+Monkey 1: 4
+Monkey 2: 3
+Monkey 3: 6
+
+...
+
+Round 2
+Monkey 0: 6
+Monkey 1: 10
+Monkey 2: 3
+Monkey 3: 10
+
+...
+
+Round 3
+Monkey 0: 12
+Monkey 1: 14
+Monkey 2: 3
+Monkey 3: 16
+
+...
+
+Round 4
+Monkey 0: 16
+Monkey 1: 20
+Monkey 2: 3
+Monkey 3: 20
+
+...
+
+Round 5
+Monkey 0: 22
+Monkey 1: 24
+Monkey 2: 4
+Monkey 3: 26
+
+...
+
+Round 6
+Monkey 0: 26
+Monkey 1: 30
+Monkey 2: 4
+Monkey 3: 30
+
+...
+
+Round 7
+Monkey 0: 33
+Monkey 1: 33
+Monkey 2: 4
+Monkey 3: 37
+
+...
+
+Round 8
+Monkey 0: 36
+Monkey 1: 40
+Monkey 2: 4
+Monkey 3: 40
+
+...
+
+Round 9
+Monkey 0: 43
+Monkey 1: 43
+Monkey 2: 4
+Monkey 3: 47
+
+...
+
+Round 10
+Monkey 0: 46
+Monkey 1: 50
+Monkey 2: 4
+Monkey 3: 50
+
+...
+
+Round 11
+Monkey 0: 54
+Monkey 1: 52
+Monkey 2: 5
+Monkey 3: 58
+
+...
+
+Round 12
+Monkey 0: 57
+Monkey 1: 59
+Monkey 2: 5
+Monkey 3: 61
+
+...
+
+Round 13
+Monkey 0: 65
+Monkey 1: 61
+Monkey 2: 6
+Monkey 3: 69
+
+...
+
+Round 14
+Monkey 0: 68
+Monkey 1: 68
+Monkey 2: 6
+Monkey 3: 72
+
+...
+
+Round 15
+Monkey 0: 75
+Monkey 1: 71
+Monkey 2: 7
+Monkey 3: 79
+
+...
+
+Round 16
+Monkey 0: 78
+Monkey 1: 78
+Monkey 2: 7
+Monkey 3: 82
+
+...
+
+Round 17
+Monkey 0: 85
+Monkey 1: 81
+Monkey 2: 8
+Monkey 3: 89
+
+...
+
+Round 18
+Monkey 0: 89
+Monkey 1: 87
+Monkey 2: 8
+Monkey 3: 93
+
+...
+
+Round 19
+Monkey 0: 95
+Monkey 1: 91
+Monkey 2: 10
+Monkey 3: 99
+
+...
+
+Round 20
+Monkey 0: 99
+Monkey 1: 97
+Monkey 2: 10
+Monkey 3: 103
+
+...
+
+Monkey business: 10197
