@@ -1,4 +1,6 @@
 import numpy as np
+
+
 # number of processes
 n = 3
 # number of resource types
@@ -16,6 +18,7 @@ max = np.array([
   [1, 2, 3, 4],
   [1, 3, 5, 0]
 ])
+
 # if request was not denied determine if it would result in a safe state
 def is_safe(available: np.ndarray) -> bool:
   need: np.ndarray = max - allocated
@@ -36,3 +39,5 @@ def req_approved(request: np.ndarray, need: np.ndarray) -> bool:
     if request[i] > need[i]:
       return False
   return True
+
+
