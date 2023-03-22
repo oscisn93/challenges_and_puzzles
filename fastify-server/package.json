@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "@prisma/client": "^4.11.0",
+    "fastify": "^4.14.1",
+    "fastify-plugin": "^4.5.0",
+    "node-fetch": "^2.6.9",
+    "nodemon": "^2.0.21",
+    "prisma": "^4.11.0"
+  },
+  "name": "fastify-proxy",
+  "version": "1.0.0",
+  "description": "An api proxy built in fastify",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "big-o",
+  "license": "ISC"
+}
