@@ -3,8 +3,7 @@ const app = require("fastify")({
 });
 
 // app.register(require("./prisma-plugin"));
-app.register(require('./routes'));
-
+app.register(require("./routes"));
 
 const start = async () => {
   try {
